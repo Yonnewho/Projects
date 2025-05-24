@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Records</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ================== Navigation Bar ================== -->
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="/Users/daniel/Desktop/Thesis/PatientRecords.html"><span class="title">Home</span></a></li>
+                <li><a href="/Users/daniel/Desktop/Thesis/PatientInformation.html"><span class="title">Patient Information</span></a></li>
+                <li><a href="#"><span class="active">Medical History</span></a></li>
+                <li><a href="/Users/daniel/Desktop/Thesis/PhysicalExamination.html"><span class="title">Physical Examination</span></a></li>
+                <li><a href="/Users/daniel/Desktop/Thesis/LaboratoryResults.html"><span class="title">Laboratory Results</span></a></li>
+            </ul>
+            <div class="options-container">
+                <button class="dropdown-btn">Options</button>
+                <div class="dropdown-content">
+                    <a href="#" id="logout-btn">Logout</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================== Main ========================== -->
+        <div class="medhis-main">
+            <h1>Medical History</h1>
+        
+            <div class="medhis-grid">
+                <!-- Medical Conditions -->
+                <div class="medhis-container">
+                    <h2>Medical Conditions</h2>
+                    <table id="medical-conditions-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+        
+                <!-- Surgeries -->
+                <div class="medhis-container">
+                    <h2>Surgeries</h2>
+                    <table id="surgeries-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type of Surgery</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+        
+                <!-- Allergies -->
+                <div class="medhis-container">
+                    <h2>Allergies</h2>
+                    <table id="allergies-table">
+                        <thead>
+                            <tr>
+                                <th>Type of Allergy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+        
+                <!-- Medications -->
+                <div class="medhis-container">
+                    <h2>Medications</h2>
+                    <table id="medications-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type of Medication</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+        
+                <!-- Family Medical History -->
+                <div class="medhis-container family-history">
+                    <h2>Family Medical History</h2>
+                    <table id="family-medical-history-table">
+                        <thead>
+                            <tr>
+                                <th>Family Lineage</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/MedicalHis.js"></script>
+
+</body>
+</html>
